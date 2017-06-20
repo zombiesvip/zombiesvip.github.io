@@ -438,8 +438,8 @@ body {
 }
 
 @media screen and (max-width: 718px) {
-	.body_content {
-		/*width: 100vw;*/
+	.header .row_2 p {
+		font-size: 30px;
 	}
 	.header .row_3 .menu {
 		width: 100%;
@@ -450,9 +450,6 @@ body {
 }
 
 @media screen and (max-width: 411px) {
-	.header .row_2 p {
-		font-size: 30px;
-	}
 	.footer .title {
 		font-size: 25px;
 	}
