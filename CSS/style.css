@@ -7,7 +7,7 @@ body {
 }
 
 .body_content {
-	width: 100%;
+	width: 1024px;
 	min-height: 635px;
 	margin: auto;
 }
@@ -17,6 +17,9 @@ body {
 	width: 100%;
 	height: 250px;
 	background-image: url(../title/header.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #009e99;
 }
 
 .header .row_1 {
@@ -62,7 +65,7 @@ body {
 	width: 500px;
 }
 
-.header .row_3 .menu .categories {
+/*.header .row_3 .menu .categories {
 	width: 150px;
 	height: 40px;
 	border-radius: 10px;
@@ -77,12 +80,13 @@ body {
 .header .row_3 .menu .categories:hover {
 	background-color: white;
 	color: black;
-}
+}*/
 
 .header .row_3 .menu .contact {
 	display: block;
 	float: right;
 	width: 80px;
+	padding-top: 40px;
 }
 
 .header .menu .contact a {
@@ -230,7 +234,7 @@ body {
 .content .main li button {
 	width: 50%;
 	height: 25px;
-	margin-left: 48.5px;
+	margin-left: 25%;
 	font-size: 15px;
 	line-height: 20px;
 	border: solid black 1px;
@@ -257,7 +261,9 @@ body {
 	height: 20px;
 	padding: 0px;
 	margin: 0px;
+	margin-right: calc(50% - 50px);
 	margin-top: 15px;
+	margin-bottom: 10px;
 	border: solid black 1px;
 	border-radius: 10px;
 }
@@ -365,7 +371,7 @@ body {
 	float: top;
 	display: block;
 	width: 100%;
-	min-height: 100px;
+	height: 120px;
 	background-color: #cccccc;
 	border-top: solid black 2px;
 }
@@ -376,7 +382,7 @@ body {
 	top: 30px;
 	left: 40px;*/
 	width: 100%;
-	height: 75px;
+	height: 60%;
 	padding-top: 30px;
 	padding-left: 40px;
 	color: black;
@@ -388,11 +394,11 @@ body {
 .footer ul.icon {
 	display: block;
 	float: right;
-	width: 100px;
-	height: 30px;
+	width: 130px;
+	height: 40%;
 	margin: 0px;
-	padding-bottom: 10px;
-	padding-right: 10px;
+	padding-bottom: 30px;
+	padding-right: 40px;
 }
 
 .footer ul.icon li {
@@ -459,9 +465,9 @@ body {
 	.content .main li p.name {
 		height: 50px;
 	}
-	.content .main li p {
+	/*.content .main li p {
 		height: 50px;
-	}
+	}*/
 	.content .main li button {
 		height: 50px;
 	}
