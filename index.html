@@ -1,125 +1,53 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<html class="no-js">
 <head>
-	<title>Lab 4 bai 2</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Demo: Cantina Negrar preloader deconstruction</title>
+	<meta name="description" content="Learn how to recreate the preloader from Cantina Negrar. Tutorial for a passionate front-end web developers by Petr Tichy.">
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
 </head>
-<body>
+<body class="demo">		
+	<div id="demo-content">
 
-<div class="body_content">
-	<div class="header">
-		<div class="row_1">
-			<input type="text" name="search" placeholder="Search...">
-		</div>
-		<div class="row_2">
-			<p>SAMSUNG SELLER</p>
-		</div>
-		<div class="row_3">
-			<div class="menu">
-				
-				<div class="contact">
-					<a href="#1"> Contact us</a>
-					<a href="#2"> Follow us</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
-	<div class="left_side_bar">
-		<ul>
-			<li class="category"> Thiết bị điện tử </li>
-			<li><a href="#3">Điện thoại</a></li>
-			<li><a href="#4">Máy tính bảng</a></li>
-			<li><a href="#5">Ổ cứng</a></li>
-			<li><a href="#6">Tai nghe</a></li>
-		</ul>
-		<ul>
-			<li class="category"> Thiết bị gia dụng </li>
-			<li><a href="#7">Máy giặt</a></li>
-			<li><a href="#8">Tủ lạnh</a></li>
-			<li><a href="#9">Tivi</a></li>
-			<li class="last"><a href="#10">Điều hòa</a></li>
-		</ul>
-	</div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
 
-	<div class="right_side_bar">
-		<p class="title">NEW !!!</p>
-		<img src="images/s8.png" alt="">
-		<p class="description">Galaxy S8</p>
-		<ul class="last">
-			<li>Android 7.0</li>
-			<li>12MP camera</li>
-			<li>4GB RAM</li>
-			<li>64 GB Bộ nhớ trong</li>
-			<li>2 Sim</li>
-			<li>Pin 3000 mAh</li>
-			<li>Hỗ trợ 4G</li>
-		</ul>
-	</div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
 
-	<div class="content">
-		<div class="title">Sản phẩm</div>
-		<div class="main">
-			<ul>
-				<li>
-					<a href="#10"><img src="images/s8.png" alt="images/s8.png"></a>
-					<p class="name">Samsung Galaxy S8</p>
-					<p>Giá: 18.490.000</p>
-					<button>Mua Ngay</button>
-				</li>
-				<li>
-					<a href="#11"><img src="images/s7_edge.png" alt=""></a>
-					<p class="name">Samsung Galaxy S7 Edge</p>
-					<p>Giá: 15.490.000</p>
-					<button>Mua Ngay</button>
-				</li>
-				<li>
-					<a href="#12"><img src="images/s7.png" alt=""></a>
-					<p class="name">Samsung Galaxy S7</p>
-					<p>Giá: 12.490.000</p>
-					<button>Mua Ngay</button>
-				</li>
-				<li>
-					<a href="#13"><img src="images/a7_2017.png" alt=""></a>
-					<p class="name">Samsung Galaxy A7 (2017)</p>
-					<p>Giá: 9.990.000</p>
-					<button>Mua Ngay</button>
-				</li>
-				<li>
-					<a href="#14"><img src="images/a5_2017.png" alt=""></a>
-					<p class="name">Samsung Galaxy a5 (2017)</p>
-					<p>Giá: 7.990.000</p>
-					<button>Mua Ngay</button>
-				</li>
-				<li>
-					<a href="#15"><img src="images/note_5.png" alt=""></a>
-					<p class="name">Samsung Galaxy Note 5</p>
-					<p>Giá: 10.490.000</p>
-					<button>Mua Ngay</button>
-				</li>
-			</ul>
 		</div>
-		<div class="pages">
-			<ul>
-				<li><a href="#11"> pre </a></li>
-				<li><a href="#12"> 1 </a></li>
-				<li><a href="#13"> 2 </a></li>
-				<li><a href="#14"> 3 </a></li>
-				<li class="last"><a href="#15"> next </a></li>
-			</ul>
-		</div>
-	</div>
 
-	<div class="footer">
-		<div class="title">SAMSUNG SELLER</div>
-		<ul class="icon">
-			<li><a href="#15"><img src="icon/facebook.png" alt="icon/facebook.png"></a></li>
-			<li><a href="#16"><img src="icon/twitter.png" alt="icon/twitter.png"></a></li>
-			<li><a href="#17"><img src="icon/google-plus.png" alt="icon/google-plus.png"></a></li>
-		</ul>
+		<div id="content">
+			<h2>This is our page title</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed.</p>
+
+			<p>Molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla.</p>
+
+			<p>Fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec purus convallis consequat. Vivamus id mollis quam. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu.</p>
+
+		
+		</div>
+
 	</div>
-</div>
+	<!-- /Demo content -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
