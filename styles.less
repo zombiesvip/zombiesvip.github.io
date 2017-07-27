@@ -1,0 +1,230 @@
+#services {
+	@orange-color: #e04122;
+	@dash-color: #b8b8b8;
+	@background-box-color: #fafafa;
+	@background-hover: #F6DEDA;
+	@border-box-color: #e8e8e8;
+	@circle-icon-background: #f6f6f6;
+	@circle-icon-border: #a2a2a2;
+	@font-color-lighter: #4c4c4c;
+	//mix-in flex
+	.flex(@justify-content: flex-start, @align-items: flex-start, @flex-direction: row, @flex-wrap: nowrap) {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: @justify-content;
+		-webkit-justify-content: @justify-content;
+		align-items: @align-items;
+		-webkit-align-items: @align-items;
+		flex-direction: @flex-direction;
+		-webkit-flex-direction: @flex-direction;
+		flex-wrap: @flex-wrap;
+		-webkit-flex-wrap: @flex-wrap;
+	}
+
+	font-size: 12px;
+
+	.remove-padding {
+		padding: 0;
+	}
+
+	.remove-small-padding {
+		@media screen and (max-width: 991px) {
+			padding: 0;
+		}
+	}
+
+	.title {
+		padding-top: 40px;
+		padding-bottom: 25px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.box-menu-large {
+		.flex(center, center, column);
+		height: 125px;
+		border: solid 1px @border-box-color;
+		background-color: @background-box-color;
+		cursor: pointer;
+		transition-duration: 0.5s;
+		color: black;
+
+		span {
+			text-align: center;
+		}
+
+		&:hover {
+			background-color: @background-hover;
+			text-decoration: none;
+		}
+
+		&:hover > * {
+			transform: scaleX(1.1);
+			transition-duration: 0.5s;
+		}
+	}
+
+	.box-menu-small {
+		.box-menu-large;
+		.flex(flex-start, center, row, wrap);
+		padding-left: 7%;
+
+
+
+		.icon {
+			height: 30%;
+			img {
+				height: 100%;
+			}
+		}
+
+		.box-content {
+			height: 30%;
+			padding-left: 2%;
+		}
+
+		&:hover > .icon {
+			transform: scale(1);
+		}
+
+		&:hover > .box-content {
+			padding-left: 5%;
+		}
+	}
+
+	.box-menu-active {
+		color: @orange-color;
+	}
+
+	.services-content {
+		.flex(center, center, row, wrap);
+
+		a {
+			text-decoration: none;
+		}
+
+		.services-box {
+			.flex(flex-start, center, column);
+			height: 300px;
+			width: 20%;
+			padding: 0px 1%;
+			color: black;
+			// background-color: grey;
+
+			@media screen and (max-width: 991px) {
+				width: 33%;
+			}
+
+			@media screen and (max-width: 767px) {
+				width: 50%;
+			}
+
+			.icon {
+				.flex(center, flex-end);
+				height: 45%;
+
+				// background-color: orange;
+
+				.outer-circle {
+					.flex(center, center);
+					height: 70%;
+					background-color: @circle-icon-background;
+					border-radius: 50%;
+				}
+
+				.inner-circle {
+					.flex(center, center);
+					width: 90%;
+					height: 90%;
+					border-radius: 50%;
+					border: solid 2px @border-box-color;
+					background-color: white;
+
+					img {
+						transform: scale(0.053);
+					}
+				}
+			}
+
+			.box-title {
+				height: 26%;
+				width: 100%;
+				font-weight: bold;
+				.flex(center, center, row, wrap);
+				text-align: center;
+			}
+
+			.dash {
+				height: 2px;
+				width: 15%;
+				margin: 0;
+				background-color: @circle-icon-background;
+			}
+
+			.description {
+				margin-top: 5%;
+				width: 100%;
+				font-size: 80%;
+				display: flex;
+				color: @font-color-lighter;
+
+				.description-icon {
+					height: 100%;
+					// padding-right: 2%;
+					width: 16px;
+
+					img {
+						height: 13px;
+					}
+					// i {
+					// 	color: @orange-color;
+					// 	font-size: 13px;
+					// }
+				}
+
+				.description-text {
+					.flex(flex-start, flex-start, row, wrap);
+				}
+			}
+			
+			transition-duration: 0.3s;
+			&:hover * {
+				transition-duration: 0.5s;
+			}
+			&:hover {
+				background-color: @background-hover;
+				cursor: pointer;
+
+				.outer-circle, .inner-cirlce {
+					transform: scale(1.1);
+				}
+
+				.dash {
+					transition-duration: 1s;
+					width: 25%;
+				}
+			}
+		}
+	}
+
+	.dash {
+		height: 4px;
+		width: 30px;
+		margin-top: 14px;
+		background-color: @orange-color;
+		transition-duration: 0.5s;
+	}
+
+	.dash-n-circle {
+		position: relative;
+		top: -1px;
+		display: inline-block;
+		font-weight: 100;
+		color: @dash-color;
+		span {
+			position: absolute;
+			top: 4px;
+			color: @orange-color;
+		}
+	}
+}
